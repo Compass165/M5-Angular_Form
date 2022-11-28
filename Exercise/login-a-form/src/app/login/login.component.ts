@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Account} from "../account";
-import {FormGroup, Validators} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-login',
@@ -21,12 +21,17 @@ export class LoginComponent implements OnInit{
   }]
 
   loginForm = new FormGroup({
-    account: new FormGroup("", [Validators.required, Validators.minLength(3)]),
-    password: new FormGroup("", [Validators.required, Validators.minLength(3)]),
+    account: new FormControl("", [Validators.required, Validators.minLength(3)]),
+    password: new FormControl("", [Validators.required, Validators.minLength(3)]),
   })
 
   check() {
-    console.log("kiem tra ti")
+    // @ts-ignore
+    if (this.account?.value == this.accounts[0].account & this.password?.value == this.accounts[0].password) {
+      alert('Login true')
+    } else {
+      alert('login fail')
+    }
   }
 
   get account() {
