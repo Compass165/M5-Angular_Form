@@ -14,10 +14,10 @@
 
         <div *ngIf="!account?.valid && (account?.dirty || account?.touched)">
           <div [hidden]="!account?.errors?.['required']">
-            <p style="color: red">First Name is required</p>
+            <p style="color: red">Account is required</p>
           </div>
           <div [hidden]="!account?.errors?.['minlength']">
-            <p style="color: red">First Name min length 3</p>
+            <p style="color: red">Account min length 3</p>
           </div>
         </div>
 
@@ -33,10 +33,10 @@
         </div>
         <div *ngIf="!password?.valid && (password?.dirty || password?.touched)">
           <div [hidden]="!password?.errors?.['required']">
-            <p style="color: red"> First Name is required </p>
+            <p style="color: red"> Password is required </p>
           </div>
           <div [hidden]="!password?.errors?.['minlength']">
-            <p style="color: red"> First Name min length 3 </p>
+            <p style="color: red"> Password min length 3 </p>
           </div>
         </div>
 
@@ -56,10 +56,10 @@
 
         <div *ngIf="!name?.valid && (name?.dirty || name?.touched)">
           <div [hidden]="!name?.errors?.['required']">
-            <p style="color: red"> First Name is required </p>
+            <p style="color: red"> Name is required </p>
           </div>
           <div [hidden]="!name?.errors?.['minlength']">
-            <p style="color: red"> First Name min length 3 </p>
+            <p style="color: red"> Name min length 3 </p>
           </div>
           <div [hidden]="!name?.errors?.['pattern']">
             <p style="color: red"> Only characters are allowed </p>
@@ -82,7 +82,7 @@
 
         <div *ngIf="!age?.valid && (age?.dirty || age?.touched)">
           <div [hidden]="!age?.errors?.['required']">
-            <p style="color: red"> First Name is required </p>
+            <p style="color: red"> Age is required </p>
           </div>
         </div>
 
@@ -101,13 +101,13 @@
 
         <div *ngIf="!email?.valid && (email?.dirty || email?.touched)">
           <div [hidden]="!email?.errors?.['required']">
-            <p style="color: red"> First Name is required </p>
+            <p style="color: red"> Email is required </p>
           </div>
           <div [hidden]="!email?.errors?.['minlength']">
-            <p style="color: red"> First Name min length 3 </p>
+            <p style="color: red"> Email min length 3 </p>
           </div>
           <div [hidden]="!email?.errors?.['email']">
-            <p style="color: red"> nhet' @ vao` tg gnu </p>
+            <p style="color: red"> nhet' @ vao` thang ugn </p>
           </div>
         </div>
 
@@ -128,10 +128,10 @@
 
         <div *ngIf="!email?.valid && (email?.dirty || email?.touched)">
           <div [hidden]="!email?.errors?.['required']">
-            <p style="color: red"> First Name is required </p>
+            <p style="color: red"> Address is required </p>
           </div>
           <div [hidden]="!email?.errors?.['minlength']">
-            <p style="color: red"> First Name min length 3 </p>
+            <p style="color: red"> Address min length 3 </p>
           </div>
         </div>
 
@@ -159,7 +159,7 @@
 
 
       <div class="row justify-content-center">
-        <input class=" col-4 mt-3" type="submit" value="Dang kiss" [disabled]="!registerForm.valid" >
+        <input class=" col-4 mt-3" type="submit" value="DANG KY" [disabled]="!registerForm.valid" >
       </div>
 
 
